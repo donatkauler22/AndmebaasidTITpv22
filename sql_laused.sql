@@ -4,6 +4,8 @@ Server Name: localdb/(...) ja Windows Authentication
 
 CREATE DATABASE kaulerTITpv22;
 
+CREATE DATABASE kaulerTITpv22;
+
 --tabeli loomine
 --primary key - annab unikaalne väärtus
 USE kaulerTITpv22;
@@ -97,5 +99,8 @@ UPDATE hindamine set Hinne=5
 WHERE hindamineID=1;
 
 ALTER TABLE hindamine ADD opilaneID int
+ALTER TABLE hindamine ADD oppeaineID int
 ALTER TABLE hindamine 
 ADD FOREIGN KEY (opilaneID) REFERENCES opilane(opilaneID);
+ALTER TABLE hindamine 
+ADD FOREIGN KEY (oppeaineID) REFERENCES oppeaine(oppeaineID);
