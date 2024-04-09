@@ -1,0 +1,7 @@
+
+cd AndmebaasidTITpv22
+git config --global user.name "Donat Kauler"
+git config --global user.email "donat.kauler@gmail.com"
+git config --global --list
+git add .
+git commit -a -m "Põhi ab sõnad on lisatud"
