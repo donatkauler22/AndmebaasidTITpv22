@@ -2,6 +2,7 @@ Andmed - данные
 haldus - администратирование
 andmebaaside haldussüsteem - система управления БД СУБД
 СУБД - MySQL, XAMPP/phpMyAdmin, MS SQL Server, DBeaver
+https://www.mockaroo.com/
 -------------------------------------------------------
 tabel=таблица
 rida=kirje - запись
