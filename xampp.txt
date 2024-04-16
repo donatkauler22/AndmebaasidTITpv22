@@ -1,0 +1,17 @@
+XAMPP control Panel
+--Start Apache
+--Start MySQL
+
+http://localhost/phpmyadmin/
+
+name: root
+password: NOPE
+
+CREATE DATABASE lilledeMyykKauler;
+CREATE TABLE tootaja(
+tootajaID INT PRIMARY KEY AUTO_INCREMENT,
+eesnimi VARCHAR(20),
+perekonnanimi VARCHAR(20),
+isikukood VARCHAR(11) UNIQUE
+)
+s
