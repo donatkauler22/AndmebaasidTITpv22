@@ -1,0 +1,21 @@
+CREATE PROCEDURE ifprocedure
+@param1 INT
+AS
+BEGIN
+	DECLARE @variable1 INT;
+	SET @variable1 = @param1 + 1;
+	IF @variable1 = 0 
+	BEGIN
+    	SELECT @variable1;
+	END
+	IF @param1 = 0 
+	BEGIN
+		SELECT 'Parameter value = 0';
+	END
+	ELSE
+	BEGIN
+		SELECT 'Parameter value <> 0';
+	END
+END;
+
+EXEC ifprocedure 0;
