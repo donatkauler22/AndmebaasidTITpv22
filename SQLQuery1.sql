@@ -78,4 +78,12 @@ SELECT USER, GETDATE(),CONCAT('Lisamine:', inserted.isiku_id, ',',inserted.oppea
 FROM inserted
 END
 
+select * from logi
+select * from Oppimine
 
+BEGIN TRANSACTION;
+select * from Oppimine
+DELETE FROM Oppimine WHERE id = 14;
+select * from Oppimine
+ROLLBACK;
+select * from Oppimine
